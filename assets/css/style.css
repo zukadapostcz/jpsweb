@@ -46,9 +46,9 @@ a { color: inherit; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.92);
-  backdrop-filter: blur(10px);
+  background: #0a0a0b;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  transform: translateZ(0);
 }
 
 .site-header .container {
