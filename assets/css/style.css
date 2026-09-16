@@ -141,11 +141,16 @@ a { color: inherit; }
     inset: 68px 0 auto 0;
     background: var(--color-bg);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    transform: translateY(-120%);
-    transition: transform 0.25s ease;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s linear 0.2s;
   }
   .main-nav.is-open {
+    visibility: visible;
+    opacity: 1;
     transform: translateY(0);
+    transition: opacity 0.2s ease, transform 0.2s ease;
   }
   .main-nav ul {
     flex-direction: column;
