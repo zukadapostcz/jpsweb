@@ -1,7 +1,7 @@
 # JPS Jedovnice — statický web
 
 Čistý statický web (HTML + CSS + trocha JS, žádný WordPress) pro kapelu
-Jarmilin pozdní běr / JPS Jedovnice. 3 stránky: `index.html` (Domů),
+Jarmilin pozdní sběr / JPS Jedovnice. 3 stránky: `index.html` (Domů),
 `repertoar.html`, `galerie.html`. Fotky jsou už doplněné z tvého exportu
 stránek (viz mapování níže) — web je tedy hned funkční.
 
