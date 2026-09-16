@@ -1,5 +1,5 @@
 /* ==========================================================================
-   JPS Jedovnice / Jarmilin pozdní běr — statický web
+   JPS Jedovnice / Jarmilin pozdní sběr — statický web
    ========================================================================== */
 
 :root {
@@ -106,12 +106,39 @@ a { color: inherit; }
 }
 
 @media (max-width: 720px) {
+  .site-footer .brand {
+    font-size: 1rem;
+  }
+  .site-footer .brand img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 720px) {
+  .site-header .container {
+    height: 68px;
+  }
+  .brand {
+    gap: 10px;
+    font-size: 0.85rem;
+    letter-spacing: 0.02em;
+    min-width: 0;
+  }
+  .brand img {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+  }
+  .nav-toggle {
+    flex-shrink: 0;
+  }
   .nav-toggle {
     display: block;
   }
   .main-nav {
     position: fixed;
-    inset: 104px 0 auto 0;
+    inset: 68px 0 auto 0;
     background: var(--color-bg);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
     transform: translateY(-120%);
@@ -240,6 +267,8 @@ section {
 
 @media (max-width: 860px) {
   .two-col { grid-template-columns: 1fr; }
+  .two-col .photo-grid { order: 2; }
+  .two-col > div:not(.photo-grid) { order: 1; }
 }
 
 .photo-grid {
